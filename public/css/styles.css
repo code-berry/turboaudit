@@ -15,10 +15,18 @@ h1, h2, p {
 	background-color: #474747;
 }
 
+.nav-item {
+	margin-right: 20px;
+}
+
 #header-top p {
 	margin: 0;
 	text-align: center;
 	color: #dddddd;
+}
+
+#logo {
+	height: 34px;
 }
 
 #header-main a {
@@ -190,18 +198,66 @@ h1, h2, p {
 
 #caro-1 {
 	background-image: url('../images/bg1.jpg');
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-}
-
-#caro-2 {
-	background-color: black;
 }
 
 #caro-3 {
-	background-color: pink;
+	background-image: url('../images/bg2.jpg');
+}
+
+#caro-3 h1 {
+	font-size: 58px;
+}
+
+#caro-3>div {
+	width: 70%;
+    height: 40%;
+    border: 2px solid white;
+    background-color: rgba(255,255,255,.5);
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 160px auto;
+}
+
+#caro-3 h3 {
+	text-align: center;
+	margin-bottom: 15px;
+	font-size: 22px;
+	font-family: Lato;
+}
+
+#caro-2 {
+	background-image: url(../images/bg3.jpg);
+}
+
+#caro-3 button {
+	padding: 10px 30px;
+	border: 2px solid transparent;
+	border-radius: 10px;
+}
+
+#caro-3 button:hover {
+	cursor: pointer;
+	border: 2px solid #3c1c2b;
+}
+
+#caro-2 h1 {
+	font-weight: bold;
+	font-size: 64px;
+	text-align: center;
+}
+
+#caro-2 h3 {
+	letter-spacing: 3px;
+	text-align: center;
+	font-size: 32px;
+	margin-bottom: 60px;
+}
+
+#caro-2>div {
+	margin: 200px auto;
 }
 
 #caro-1>div {
@@ -212,6 +268,8 @@ h1, h2, p {
     justify-content: center;
     flex-direction: column;
     padding: 50px;
+    width: 70%;
+    margin: 100px auto;
 }
 
 #caro-1 h1 {
@@ -360,10 +418,33 @@ i {
 	height: 38px;
 	color: #fafafa;
 	font-size: 14px;
+	transition: background-color 500ms ease-out, color 500ms ease, border-color 800ms ease-in;
+}
+
+#hd3-footer button:hover {
+	background-color: #fafafa;
+	border-color: #414141;
+	color: #414141;
+	cursor: pointer;
 }
 
 #hd3-footer .row {
 	margin: 0 60px;
+}
+
+ul {
+	margin: 0;
+	padding-left: 30px;
+	list-style: none;
+}
+
+ul li a {
+	font-family: Lato;
+	color: #5fb0f2;
+}
+
+ul li a:hover{
+	text-decoration: underline;
 }
 
 input {
@@ -373,12 +454,52 @@ input {
 }
 
 footer {
-	padding: 50px 0;
+	padding: 40px 0;
 	background-color: #414141;
 	margin-top: 120px;
+}
+
+footer p {
+	color: #9f9f9f;
+	font-family: Lato;
+	margin: 20px 20px 0 10px;
 }
 
 footer h1 {
 	font-family: Lato;
 	font-weight: bold;
+	margin-bottom: 10px;
+	color: #cecdd3;
+}
+
+@media screen and (max-width: 967px) {
+	#caro-3>div {
+		height: unset;
+	}
+	#caro-3 h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 667px) {
+	#home-caro {
+		height: 520px;
+	}
+	#caro-2 h3 {
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+	#caro-2 h1 {
+		font-size: 45px;
+	}
+	#caro-1 h1 {
+		font-size: 30px;
+	}
+	#caro-1 h6 {
+		font-size: 18px;
+	}
+	#caro-3>div {
+		margin: 60px auto;
+	}
 }
