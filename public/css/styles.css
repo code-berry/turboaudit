@@ -432,6 +432,20 @@ i {
 	margin: 0 60px;
 }
 
+#sub-temp h1 {
+	font-family: Lato;
+	font-weight: bold;
+}
+
+#sub-temp div {
+	min-height: 600px;
+    padding-top: 50px;
+}
+
+#sub-temp p {
+	font-size: 22px;
+}
+
 ul {
 	margin: 0;
 	padding-left: 30px;

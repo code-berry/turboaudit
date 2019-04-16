@@ -19,5 +19,9 @@ $(window).scroll((event)=> {
 	}
 });
 
+$('.grid-button').click((event)=> {
+	let name = event.target.name;
+	window.open(`/pages/${name}`, '_top');
+});
 
 AOS.init();
