@@ -1,4 +1,4 @@
-import { CountUp } from '/js/CountUp.js';
+import { CountUp } from '/js/countUp.js';
 
 let anim8 = () => {
 	let countUp1 = new CountUp('count1', 2000);
